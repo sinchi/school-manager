@@ -8,7 +8,7 @@ const ParentManager = lazy( () =>  import("../components/ParentManager"));
 
 const history = createBrowserHistory();
 const Loading = () => <div>Loading ...</div>
-const SchoolManager = () => <h1>School Manager Container.</h1>
+const SchoolManager = () => <h1>School Manager Container</h1>
 const App = () => {
     return (
         <Router history={history}>
