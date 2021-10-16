@@ -13,7 +13,7 @@ const configProd = {
     },
     plugins: [
         new ModuleFederationPlugin({
-            name: 'parent',
+            name: 'parent_manager',
             filename: 'remoteEntry.js',
             exposes: {
                 './ParentManager': './src/bootstrap'
