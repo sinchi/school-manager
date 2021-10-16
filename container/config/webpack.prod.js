@@ -18,7 +18,9 @@ const prodConfig = {
         new ModuleFederationPlugin({
             name: 'SchoolManager',
             remotes: {
-                'student': `student_manager@${domain}/container/latest/remoteEntry.js`
+                'student': `student_manager@${domain}/student/latest/remoteEntry.js`,
+                'teacher': `teacher_manager@${domain}/teacher/latest/remoteEntry.js`,
+                'parent': `parent_manager@${domain}/parent/latest/remoteEntry.js`
             },
             shared: jsonPackage.dependencies
         }),
